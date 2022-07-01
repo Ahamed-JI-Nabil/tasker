@@ -5,6 +5,7 @@ import NavBar from './Pages/Shared/NavBar';
 import Home from './Pages/Home/Home';
 import ToDo from './Pages/TO-DO/ToDo';
 import Calender from './Pages/Calender/Calender';
+import CompletedTasks from './CompletedTasks/CompletedTasks';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/to-do' element={<ToDo></ToDo>}></Route>
+        <Route path='/completed-tasks' element={<CompletedTasks></CompletedTasks>}></Route>
         <Route path='/calender' element={<Calender></Calender>}></Route>
       </Routes>
     </div>

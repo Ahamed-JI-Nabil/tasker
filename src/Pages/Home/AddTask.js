@@ -1,7 +1,10 @@
 import React from 'react';
+import useTasks from '../Hooks/useTasks';
 
 
 const AddTask = () => {
+
+    const [setTasks] = useTasks([])
 
     const handleSubmit = event => {
         event.preventDefault()
@@ -22,6 +25,7 @@ const AddTask = () => {
             .then(data => {
                 console.log(data)
                 event.target.reset()
+
             });
 
     }
@@ -29,11 +33,11 @@ const AddTask = () => {
 
     return (
         <div>
-            <div class="card justify-center items-center">
-                <div class="card-body w-96 py-1">
+            <div className="card justify-center items-center">
+                <div className="card-body w-96 py-1">
                     <form onSubmit={handleSubmit} className="flex flex-col items-center">
-                        <input type="text" placeholder="Type here..." class="input input-bordered input-primary w-full max-w-xs text-black font-semibold text-lg" name='task' />
-                        <button class="btn bg-gradient-to-r from-indigo-500 via-red-400 to-indigo-500 mt-6">Add Task</button>
+                        <input type="text" placeholder="Type here..." className="input input-bordered input-primary w-full max-w-xs text-black font-semibold text-lg" name='task' />
+                        <button className="btn bg-gradient-to-r from-indigo-500 via-red-400 to-indigo-500 mt-6">Add Task</button>
                     </form>
                 </div>
             </div>
