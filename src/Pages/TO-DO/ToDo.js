@@ -10,8 +10,8 @@ const ToDo = () => {
     return (
         <div>
             <div className="card justify-center items-center">
-                <div className="card-body w-96">
-                    <div>
+                <div className="card-body">
+                    <div className='grid lg:grid-rows-4 lg:grid-flow-col gap-2'>
                         {
                             tasks.map(task => <Task
                                 key={task._id}

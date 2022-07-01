@@ -10,7 +10,6 @@ const useTasks = () => {
             .then(res => res.json())
             .then(data => {
                 setTasks(data)
-                console.log(data);
 
             })
     }, [])
