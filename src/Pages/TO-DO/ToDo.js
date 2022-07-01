@@ -1,21 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import useTasks from '../Hooks/useTasks';
 import Task from './Task';
 
 const ToDo = () => {
 
-    const [tasks, setTasks] = useState([])
-
-    const url = 'http://localhost:5000/tasks'
-
-    useEffect(() => {
-        fetch(url)
-            .then(res => res.json())
-            .then(data => {
-                setTasks(data)
-                console.log(data);
-
-            })
-    }, [])
+    const [tasks] = useTasks([])
 
 
     return (

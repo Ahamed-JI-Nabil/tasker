@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const AddTask = () => {
 
     const handleSubmit = event => {
@@ -22,9 +23,6 @@ const AddTask = () => {
                 console.log(data)
                 event.target.reset()
             });
-
-
-        console.log(event.target.task.value);
 
     }
 
