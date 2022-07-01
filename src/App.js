@@ -1,10 +1,20 @@
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+
 import NavBar from './Pages/Shared/NavBar';
+import Home from './Pages/Home/Home';
+import ToDo from './Pages/TO-DO/ToDo';
+import Calender from './Pages/Calender/Calender';
 
 function App() {
   return (
-    <div className='bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900'>
+    <div className='bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-white'>
       <NavBar></NavBar>
+      <Routes>
+        <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/to-do' element={<ToDo></ToDo>}></Route>
+        <Route path='/calender' element={<Calender></Calender>}></Route>
+      </Routes>
     </div>
   );
 }
