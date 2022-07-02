@@ -18,7 +18,7 @@ const Task = ({ task }) => {
         const updatedIsDone = { _id, name, isDone: true }
         console.log(updatedIsDone);
 
-        fetch(`http://localhost:5000/tasks/${_id}`, {
+        fetch(`https://socialist-eds-50299.herokuapp.com/tasks/${_id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ const Task = ({ task }) => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure you want to delete this task?')
         if (proceed) {
-            fetch(`http://localhost:5000/tasks/${_id}`, {
+            fetch(`https://socialist-eds-50299.herokuapp.com/tasks/${_id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

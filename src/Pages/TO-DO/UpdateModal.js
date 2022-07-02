@@ -11,7 +11,7 @@ const UpdateModal = ({ task, setModal }) => {
         const updateTask = { _id, name: updatedTask, isDone }
         console.log(updateTask);
 
-        fetch(`http://localhost:5000/tasks/${_id}`, {
+        fetch(`https://socialist-eds-50299.herokuapp.com/task/${_id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

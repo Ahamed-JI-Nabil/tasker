@@ -14,7 +14,7 @@ const AddTask = () => {
             isDone: false
         }
 
-        fetch('http://localhost:5000/tasks', {
+        fetch('https://socialist-eds-50299.herokuapp.com/tasks', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

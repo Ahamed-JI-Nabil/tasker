@@ -6,6 +6,7 @@ import Home from './Pages/Home/Home';
 import ToDo from './Pages/TO-DO/ToDo';
 import Calender from './Pages/Calendar/Calender';
 import CompletedTasks from './CompletedTasks/CompletedTasks';
+import NotFound from './Pages/Shared/NotFoung';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/to-do' element={<ToDo></ToDo>}></Route>
         <Route path='/completed-task' element={<CompletedTasks></CompletedTasks>}></Route>
         <Route path='/calender' element={<Calender></Calender>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
     </div>
   );
