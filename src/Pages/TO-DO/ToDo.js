@@ -14,7 +14,11 @@ const ToDo = () => {
             <div className="card justify-center items-center">
                 <div className="card-body">
                     <div className='grid lg:grid-rows-4 lg:grid-flow-col gap-2'>
-                        {
+                        {match ?
+                            tasks.filter(task => task.isDone === false).map(task => <Task
+                                key={task._id}
+                                task={task}
+                            ></Task>) :
                             tasks.map(task => <Task
                                 key={task._id}
                                 task={task}
