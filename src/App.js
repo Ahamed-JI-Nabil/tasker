@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import NavBar from './Pages/Shared/NavBar';
 import Home from './Pages/Home/Home';
 import ToDo from './Pages/TO-DO/ToDo';
-import Calender from './Pages/Calender/Calender';
+import Calender from './Pages/Calendar/Calender';
 import CompletedTasks from './CompletedTasks/CompletedTasks';
 
 function App() {

@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
 
     const navItems = <>
-        <li><Link to='/completed-task'>Completed Tasks</Link></li>
         <li><Link to='/to-do'>TO DO</Link></li>
-        <li><Link to='/calender'>Calender</Link></li>
+        <li><Link to='/completed-task'>Completed Tasks</Link></li>
+        <li><Link to='/calender'>Calendar</Link></li>
     </>
 
     return (
